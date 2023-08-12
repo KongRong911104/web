@@ -1,14 +1,14 @@
-# OS
-ubuntu20.04適用
+# OS  
+ubuntu20.04適用  
 
-# 環境設定
-套件安裝
+# 環境設定  
+套件安裝  
 ```
-sudo apt install php7.4 php7.4-gd mysql-server python3-pip php-mysqli
+sudo apt install php7.4 php7.4-gd mysql-server python3-pip php-mysqli  
 ```
 ```
-pip install pymysql fake-useragent urllib3 beautifulsoup4 openpyxl python-docx pandas
-```
+pip install pymysql fake-useragent urllib3 beautifulsoup4 openpyxl python-docx pandas  
+``` 
 
 cd至適合的位置
 ```
