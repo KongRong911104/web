@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>今天吃什麼？</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="edit_store_6.0.css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <form id="search_form_id" class="search_form">
+        <input type="text" id="search_name_id" name="search_name">
+        <button type="button" id="search_button_id" onclick="b_search()">搜尋店家名稱</button>
+    </form>
+
+    <div class="div_class">
+        <table id="table_id" class="table_class">
+            <!-- <tr class="stores_tr">
+                <td class="td_class" style="border:1px rgb(2, 183, 238) solid;">
+                    000
+                </td>
+                <td >
+                    111
+                </td>
+            </tr>
+            <tr class="stores" >
+                <td >
+                    222
+                </td>
+                <td>
+                    333
+                </td>
+            </tr> -->
+        </table>
+    </div>
+    <!-- <button type="button" onclick="b_edit()" style="
+        position:absolute;
+        top: 55%;
+        left: 65%;
+        transform: translate(-50%,0%);">修改</button> -->
+
+    <form action="edit_store.php" method="post" id="edit_id" class="edit_class" style="
+    position:absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%,0%);" disabled="disabled">
+        <input type="text" id="SID_id" name="SID" disabled="disabled" style="display: none;"><!--style="display: none;"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <input type="text" id="edit_name_id" name="edit_name_name" disabled="disabled">
+        <select id="edit_o_h" name="edit_o_hour" disabled="disabled">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+            <option value=17>17</option>
+            <option value=18>18</option>
+            <option value=19>19</option>
+            <option value=20>20</option>
+            <option value=21>21</option>
+            <option value=22>22</option>
+            <option value=23>23</option>
+        </select>
+        <select id="edit_o_m" name="edit_o_minute" disabled="disabled">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+        </select>
+        <select id="edit_c_h" name="edit_c_hour" disabled="disabled">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+            <option value=17>17</option>
+            <option value=18>18</option>
+            <option value=19>19</option>
+            <option value=20>20</option>
+            <option value=21>21</option>
+            <option value=22>22</option>
+            <option value=23>23</option>
+        </select>
+        <select id="edit_c_m" name="edit_c_minute" disabled="disabled">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+        </select>
+        <input type="checkbox" id="edit_mon" name="edit_day[]" value="1" disabled="disabled">一&nbsp;
+        <input type="checkbox" id="edit_tue" name="edit_day[]" value="2" disabled="disabled">二&nbsp;
+        <input type="checkbox" id="edit_wed" name="edit_day[]" value="3" disabled="disabled">三&nbsp;
+        <input type="checkbox" id="edit_thu" name="edit_day[]" value="4" disabled="disabled">四&nbsp;
+        <input type="checkbox" id="edit_fri" name="edit_day[]" value="5" disabled="disabled">五&nbsp;
+        <input type="checkbox" id="edit_sat" name="edit_day[]" value="6" disabled="disabled">六&nbsp;
+        <input type="checkbox" id="edit_sun" name="edit_day[]" value="7" disabled="disabled">日&nbsp;
+        <button type="button" id="edit_btn" onclick="edit_btn_c()" disabled="disabled">修改</button>
+        <button type="button" id="edit_sub" onclick="edit_sub_c()" disabled="disabled">提交</button>
+    </form>
+
+    <form action="add_store.php" method="post" id="add_id" class="add_class" style="
+    position:absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%,0%);">
+        <input type="text" id="add_name_id" name="add_name_name" disabled="disabled">
+        <select id="add_o_h" name="add_o_hour" disabled="disabled">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+            <option value=17>17</option>
+            <option value=18>18</option>
+            <option value=19>19</option>
+            <option value=20>20</option>
+            <option value=21>21</option>
+            <option value=22>22</option>
+            <option value=23>23</option>
+        </select>
+        <select id="add_o_m" name="add_o_minute" disabled="disabled">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+        </select>
+        <select id="add_c_h" name="add_c_hour" disabled="disabled">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+            <option value=17>17</option>
+            <option value=18>18</option>
+            <option value=19>19</option>
+            <option value=20>20</option>
+            <option value=21>21</option>
+            <option value=22>22</option>
+            <option value=23>23</option>
+        </select>
+        <select id="add_c_m" name="add_c_minute" disabled="disabled">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+        </select>
+        <input type="checkbox" name="add_days[]" value="1" disabled="disabled">一&nbsp;
+        <input type="checkbox" name="add_days[]" value="2" disabled="disabled">二&nbsp;
+        <input type="checkbox" name="add_days[]" value="3" disabled="disabled">三&nbsp;
+        <input type="checkbox" name="add_days[]" value="4" disabled="disabled">四&nbsp;
+        <input type="checkbox" name="add_days[]" value="5" disabled="disabled">五&nbsp;
+        <input type="checkbox" name="add_days[]" value="6" disabled="disabled">六&nbsp;
+        <input type="checkbox" name="add_days[]" value="7" disabled="disabled">日&nbsp;
+        <button type="button" id="add_btn" onclick="add_btn_c()">新增</button>
+        <button type="button" id="add_sub" onclick="add_sub_c()" disabled="disabled">提交</button>
+    </form>
+
+    <form action="del_store.php" method="post" id="del_id" style="display: none;">
+        <input type="text" id="del_name_id" name="del_name_name">
+    </form>
+
+    <button type="button" id="delete_btn" style="
+    position:absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%,0%);" onclick="delete_btn_c()" disabled="disabled">刪除</button>
+
+    <!-- <table style="
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: rgb(255, 232, 232);" >
+        <tr onclick="ccc()" >
+            <td>
+                00
+            </td>
+            <td>
+                00
+            </td>
+            <td>
+                00
+            </td>
+            <td>
+                00
+            </td>
+        </tr>
+    </table> -->
+
+    <button class="back_class" onclick="back_c()">
+        回到首頁
+    </button>
+
+</body>
+
+<script src="edit_store_6.0.js"></script>
+
+</html>

@@ -1,0 +1,4 @@
+localhost         # 伺服器
+kongrong       # 使用者帳號
+kongrong1104 # 使用者密碼
+web    # 資料庫名稱

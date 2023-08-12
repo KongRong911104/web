@@ -1,0 +1,48 @@
+.div_class {
+    height: 500px;
+    width: 1000px;
+    overflow: auto;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.search_form {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.table_class {
+    width: 1000px;
+    border-collapse: collapse;
+}
+
+.td_class{
+    border:1px rgb(112, 112, 112) solid;
+    text-align: center;
+}
+
+.back_class{
+    height: 50px;
+    width: 55px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.dark_b{
+    background-color:rgb(150, 150, 150);
+}
+
+/* .tr_class{
+    background-color: rgb(216, 216, 216);
+}
+
+.tr_class_2{
+    background-color: rgb(133, 133, 133);
+} */

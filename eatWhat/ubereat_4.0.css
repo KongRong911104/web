@@ -1,0 +1,75 @@
+.s_h_class{
+    font-size: 30px;
+    width: 6%;
+    height: 4.15%;
+    position:absolute;
+    top: 33%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+}
+
+.s_m_class{
+    font-size: 30px;
+    width: 11%;
+    height: 4.15%;
+    position:absolute;
+    top: 33%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+}
+
+.b_e_class{
+    font-size: 16px;
+    width: 8%;
+    height: 4.15%;
+    position:absolute;
+    top: 40%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+
+.b_n_class{
+    font-size: 17px;
+    width: 10%;
+    height: 4.6%;
+    position:absolute;
+    top: 55%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+
+.status_class{
+    width: 3%;
+    height: 2.6%;
+    position:absolute;
+    top: 1.15%;
+    left: 97.5%;
+    transform: translate(-50%,0%);
+}
+
+.status{
+    width: 6%;
+    height: 2.1%;
+    position:absolute;
+    top: 1.15%;
+    left: 92%;
+    transform: translate(-50%,0%);
+}
+
+.div_class{
+    width: 1600px;
+    height: 100%;
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%,0%);
+}
+
+.link_t{
+    width: 150px;
+    height: 10px;
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

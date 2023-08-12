@@ -1,0 +1,70 @@
+.s_h_class{
+    font-size: 58px;
+    width: 25%;
+    height: 8.3%;
+    position:absolute;
+    top: 29%;
+    left: 43%;
+    transform: translate(-100%,-100%);
+}
+
+.s_m_class{
+    font-size: 58px;
+    width: 38%;
+    height: 8.3%;
+    position:absolute;
+    top: 29%;
+    left: 47%;
+    transform: translate(0%,-100%);
+}
+
+.b_e_class{
+    font-size: 44px;
+    width: 27%;
+    height: 8.3%;
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.b_n_class{
+    font-size: 48px;
+    width: 50%;
+    height: 9.2%;
+    position:absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.status_class{
+    font-size: 30px;
+    width: 15%;
+    height: 3.5%;
+    position:absolute;
+    top: 97.2%;
+    left: 45%;
+    transform: translate(-100%,-100%);
+}
+
+.status{
+    font-size: 30px;
+    width: 25%;
+    height: 3%;
+    position:absolute;
+    top: 97.1%;
+    left: 55%;
+    transform: translate(0%,-100%);
+}
+
+.link_t{
+    width: 45%;
+    height: 9.2%;
+    font-size: 38px;
+    text-align:center;
+    position:absolute;
+    top:79%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

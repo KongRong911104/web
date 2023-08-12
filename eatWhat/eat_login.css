@@ -1,0 +1,49 @@
+.login_1{
+    width:100px;
+    height:50px;
+    font-size:12pt;
+    color:rgba(204, 204, 204, 0.815);
+    text-align:center;
+    background-color:rgba(2, 183, 238, 0.1);
+    border-radius: 10px;
+    position:absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border:3px rgba(204, 204, 204, 0.2) solid;
+}
+
+.login_2{
+    width:100px;
+    height:50px;
+    font-size:12pt;
+    color:rgba(204, 204, 204, 0.815);
+    text-align:center;
+    background-color:rgba(204, 204, 204, 0.2);
+    border-radius: 10px;
+    position:absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px rgba(2, 183, 238, 0.1) solid;
+}
+
+.login_text{
+    position:absolute;
+    /* font-size:30pt; */
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title{
+    color:rgba(73, 195, 252, 0.596);
+    text-align:center;
+    font-size:60pt;
+    /* background-color:rgba(133, 206, 248, 0.239); */
+    line-height:200%;
+    position:absolute;
+    top: 10%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+}
